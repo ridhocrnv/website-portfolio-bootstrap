@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #0F2167;
+  --secondary-color: #3559E0;
+  --white-color: #FFFFFF;
+  --third-color: #F4F6FF;
+  --fourth-color: #0F2167;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-custom {
+  background-color: var(--secondary-color);
+}
+
+.navbar-custom {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-custom {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.hero .container {
+  max-width: 1200px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .container .hero-box .box img {
+  object-fit: cover;
+  border-radius: 50%;
+  max-width: 500px;
+  aspect-ratio: 1;
+}
+
+.hero-box .box h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero-box .box h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.hero-box .box p {
+  font-size: 14px;
+}
+
+#about {
+  font-family: 'Poppins', sans-serif;
+}
+
+#about p {
+  max-width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#biodata {
+  font-family: 'Poppins', sans-serif;
+}
+
+#about img {
+  object-fit: cover;
+  max-width: 250px;
+  aspect-ratio: 1;
+}
+
+#services {
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-box .service i {
+  font-size: 28px;
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .hero-box {
+    flex-direction: column; /* Agar konten berurutan secara vertikal */
+  }
+
+  .hero-box .box img {
+    width: 100%; /* Perkecil gambar */
+    max-width: 450px; /* Atur batas maksimal */
+    height: auto; /* Jaga proporsi */
+    object-fit: cover;
+  }
+
+  .hero-box .box h1 {
+    font-size: 3rem; /* Perkecil ukuran heading */
+  }
+
+  .hero-box .box p {
+    font-size: 12px; /* Sesuaikan ukuran teks */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .hero-box {
+    text-align: center;
+  }
+
+  .hero-box .box h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .hero-box .box h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .hero-box .box p {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .img-ratio {
+    width: 80%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  #about p {
+    font-size: 16px;
+    max-width: 300px;
+    width: 50%;
+  }
+}
