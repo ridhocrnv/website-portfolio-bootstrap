@@ -89,6 +89,36 @@ section {
   font-size: 28px;
 }
 
+#projects {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-box .accordion-button:after {
+  background-color: var(--white-color);
+  border-radius: 100%;
+}
+
+.footer {
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+.footer-box .row .col:nth-child(2) a {
+  opacity: 75%;
+}
+
+.footer-box .row .col:nth-child(2) a:hover {
+  opacity: 100%;
+}
+
+.copyright {
+  margin-top: 100px;
+}
+
 @media (min-width: 800px) and (max-width: 1024px) {
   .hero-box {
     flex-direction: column; /* Agar konten berurutan secara vertikal */
